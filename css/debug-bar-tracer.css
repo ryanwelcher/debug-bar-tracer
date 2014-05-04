@@ -1,0 +1,26 @@
+#tracer-output .debug-traces {
+  clear: both; }
+#tracer-output .single-trace {
+  margin-bottom: 20px; }
+#tracer-output .single-trace-location {
+  color: #888888;
+  display: block;
+  font-size: 15px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  white-space: nowrap; }
+#tracer-output .single-trace-data {
+  background: #000;
+  color: #0C0;
+  font-size: 14px;
+  font-family: monospace;
+  font-weight: 100;
+  padding: 20px 10px; }
+  #tracer-output .single-trace-data pre {
+    font-size: 14px; }
+  #tracer-output .single-trace-data h2 {
+    border: none; }
+  #tracer-output .single-trace-data a {
+    color: #0C0 !important; }
+#tracer-output a.single-trace-toggle-data {
+  color: #888888 !important; }
