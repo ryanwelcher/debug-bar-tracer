@@ -19,7 +19,7 @@ class Debug_Bar_Tracer extends Debug_Bar_Panel {
 	 * init()
 	 */
 	public function init() {
-		$this->title( __( 'Tracer', 'debug-bar' ) );
+		$this->title( __( 'Tracer', 'debug-bar-tracer' ) );
 		add_action( 'wp_print_styles', array( $this, 'print_styles' ) );
 		add_action( 'admin_print_styles', array( $this, 'print_styles' ) );
 	}
@@ -46,7 +46,7 @@ class Debug_Bar_Tracer extends Debug_Bar_Panel {
 	 */
 	public function render() {
 		echo "<div id='tracer-output'>";
-			echo '<h2><span>'.__('Tracer Count', 'debug-bar').'</span>' . number_format( count( self::$traces ) ) . "</h2>\n";
+			echo '<h2><span>'.__('Tracer Count', 'debug-bar-tracer').'</span>' . number_format( count( self::$traces ) ) . "</h2>\n";
 			echo "<div class='debug-traces'>";
 			echo $this->rw_debug_bar_tracer_parse( self::$traces );
 			echo "</div>";
@@ -77,7 +77,7 @@ class Debug_Bar_Tracer extends Debug_Bar_Panel {
 			$key = ( isset( $trace['key'] ) ) ? 'User Defined :: '.$trace['key'] : '';
 
 			$tempOutput .= '<div class="single-trace">';
-				$tempOutput .= '<div class="single-trace-location"><strong>Location:</strong> ' .$trace['location'].' - <a href="#" class="single-trace-toggle-data">Toggle</a></div> ';
+				$tempOutput .= '<div class="single-trace-location"><strong>'.__('Location:','debug-bar-tracer').'</strong> ' .$trace['location'].' - <a href="#" class="single-trace-toggle-data">Toggle</a></div> ';
 				$tempOutput .= '<div class="single-trace-data">' . $key . $this->rw_debug_tracer_parse_object( $trace['data'] ).'</div>';
 
 				

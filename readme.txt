@@ -12,7 +12,7 @@ Trace messages/data to a Debug Bar window from your theme or plugin. Requires th
 
 == Description ==
 
-Many times when creating a custom theme or plugin there is need to view a piece of data you are working with. Sending it out to the browser is ugly and can break layout.
+Many times when creating a custom theme or plugin there is need to view a piece of data you are working with. Sending it out to the browser is ugly and can break the layout.
 This plugin adds a new tab to the Debug Bar plugin that allows you to "trace" the data to a window and displays not only the data, but where the call came from and optionally a description.
 
 Plus, it's green like the Matrix.
